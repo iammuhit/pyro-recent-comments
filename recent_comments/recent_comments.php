@@ -59,7 +59,7 @@ class Widget_Recent_comments extends Widgets
 	public function run($options)
 	{		
 		// load the comments module's model
-		class_exists('Comments_m') OR $this->load->model('comments/comments_m');
+		class_exists('Comment_m') OR $this->load->model('comments/comment_m');
 
 		// sets default number of comments to be shown
 		empty($options['limit']) AND $options['limit'] = 5;
